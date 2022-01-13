@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form action="result.html" id="payment">
+      <fieldset>
+        <legend>Your Details</legend>
+        <ol>
+          <li>
+            <label for="name">Name </label
+            ><input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your first and last name"
+            />
+          </li>
+          <li>
+            <label for="email">E-mail </label
+            ><input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+            />
+          </li>
+          <li>
+            <label for="phone"></label>Phone<input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Eg. +444555666"
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Delivery Adress</legend>
+        <ol>
+          <li>
+            <label for="adress">Adress</label>
+            <textarea id="address" name="address" rows="5" required></textarea>
+          </li>
+          <li>
+            <label for="postcode"></label>Postcode<input
+              type="number"
+              name="number"
+              id="number"
+              required
+            />
+          </li>
+          <li>
+            <label for="country"></label>Country
+            <select>
+              <option value="Turkey">Turkey</option>
+              <option value="Canada">Canada</option>
+              <option value="Belgium">Belgium</option>
+              <option value="France">France</option>
+            </select>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Card Details</legend>
+        <ol>
+          <li>
+            <fieldset>
+              <legend>Card Type</legend>
+              <ol>
+                <li>
+                  <input type="radio" name="visa" id="visa" />
+                  <label for="visa">Visa</label>
+                </li>
+                <li>
+                  <input type="radio" name="mastercard" id="mastercard" />
+                  <label for="mastercard">Mastercard</label>
+                </li>
+                <li>
+                  <input type="radio" name="other" id="other" />
+                  <label for="other">Other</label>
+                </li>
+              </ol>
+            </fieldset>
+          </li>
+          <li>
+            <label for="CardNum">Card Number</label>
+            <input type="number" name="CardNum" id="CardNum" />
+          </li>
+          <li>
+            <label for="SecurityNum">Security Number</label>
+            <input type="number" name="SecurityNum" id="SecurityNum" />
+          </li>
+          <li>
+            <label for="Cname">Name on the Card </label
+            ><input
+              type="text"
+              id="Cname"
+              name="Cname"
+              placeholder="Exact name on the Card"
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Buy it!</button>
+      </fieldset>
+      <div
+        style="
+          font-size: medium;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        "
+      >
+        <label for="Satisfaction"> </label>
+        <caption>
+          Satisfaction:
+        </caption>
+        <input type="range" name="" id="" />
+      </div>
+    </form>
+  </body>
+</html>
